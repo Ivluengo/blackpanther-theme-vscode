@@ -1,0 +1,31 @@
+{
+    "name": "blackpanther",
+    "displayName": "BlackPanther Theme",
+    "description": "Visual Studio Code Theme by Ivan Luengo",
+    "publisher": "ivan-luengo",
+    "icon": "images/logo.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "galleryBanner": {
+		"color": "#99ffcc",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+    "contributes": {
+        "themes": [
+            {
+                "label": "BlackPanther",
+                "uiTheme": "vs-dark",
+                "path": "./themes/BlackPanther-color-theme.json"
+            }
+        ]
+    }
+}
