@@ -2,9 +2,9 @@
     "name": "blackpanther",
     "displayName": "BlackPanther Theme",
     "description": "Visual Studio Code Theme by Ivan Luengo",
-    "publisher": "Ivan Luengo",
+    "publisher": "ivan-luengo",
     "icon": "images/logo.png",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/Ivluengo/blackpanther-theme-vscode"
