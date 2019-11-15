@@ -10,12 +10,10 @@
 5. Code > Preferences > Color Theme > **BlackPanther**
 6. Optional: Use the recommended settings below for best experience
 
-## Recommended Settings
+## Recommended Settings.json
 
 ```js
 {
-  "name": "Black Panther",
-  "type": "dark",
   "editor.fontSize": 17,
   "editor.fontWeight": "500",
   "editor.lineHeight": 25,
