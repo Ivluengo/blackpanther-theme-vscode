@@ -6,9 +6,9 @@
 1. Open **Extensions** sidebar panel in VS Code. `View → Extensions`
 2. Search for `BlackPanther` - find the one by **Ivan Luengo**.
 3. Click **Install** to install it.
-4. Click **Reload** to reload the your editor
+4. Click **Reload** to reload your editor.
 5. Code > Preferences > Color Theme > **BlackPanther**
-6. Optional: Use the recommended settings below for best experience
+6. Optional: Download the font mentioned (Victor Mono) and use the recommended settings below for best experience.
 
 ## Recommended Settings.json
 
