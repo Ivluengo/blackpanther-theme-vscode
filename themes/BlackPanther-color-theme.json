@@ -23,6 +23,7 @@
 		"list.hoverForeground": "#aaa",
 		"list.inactiveSelectionBackground": "#303030",
 		"list.inactiveSelectionForeground": "#99ffcc",
+		"tree.indentGuidesStroke": "#99ffcc",		
 		//panel
 		"panel.background": "#161616",
 		"panel.border": "#f6ab1c",
@@ -142,9 +143,21 @@
 			"scope": [
 				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",								
+
 			],
 			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "CSS Pseudo-classes",
+			"scope": [				
+				"entity.other.attribute-name.pseudo-class",
+				"entity.other.attribute-name.pseudo-element"				
+			],
+			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#C792EA"
 			}
 		},
@@ -186,7 +199,10 @@
 			"name": "String quote punctuation, module js word",
 			"scope": [
 				"punctuation.definition.string",
-				"support.type.object.module"
+				"support.type.object.module",
+				"keyword.control.at-rule",
+				"keyword.other.unit",
+				"entity.name.type"				
 			],
 			"settings": {
 				"foreground": "#99ffcc",
@@ -199,6 +215,7 @@
 				"keyword.control.flow",
 				"storage.type.class",
 				"constant.language.boolean",
+				"support.type.primitive",
 			],
 			"settings": {
 				"foreground": "#99ffcc",
@@ -206,13 +223,23 @@
 			}
 		},
 		{
+			"name": "Tipado de Typescript",
+			"scope": [				
+				"support.type.primitive",
+			],
+			"settings": {
+				"foreground": "#F78C6C",
+				"fontStyle": "italic"
+			}
+		},
+		{
 			"name": "Function, Special Method, length",
 			"scope": [
 				"meta.function-call",
-				"variable.function",
+				"variable.function",				
 				//"support.function",
 				"keyword.other.special-method",
-				"support.variable.property"
+				"support.variable.property"				
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -246,8 +273,7 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
-				"keyword.other.unit",
+				"variable.parameter",				
 				"keyword.other"
 			],
 			"settings": {
@@ -260,7 +286,9 @@
 				"variable.parameter",
 				"variable.other.readwrite",
 				"variable.other.property",
-				"meta.object-literal.key"
+				"meta.object-literal.key"	,
+				"support.constant.property-value"	,
+				"punctuation.definition.keyword"			
 			],
 			"settings": {
 				"foreground": "#FFB454"
@@ -275,7 +303,7 @@
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
 			],
 			"settings": {
 				"foreground": "#C3E88D"
@@ -300,7 +328,7 @@
 		{
 			"name": "Entity Types",
 			"scope": [
-				"support.type"
+				"support.type",
 			],
 			"settings": {
 				"foreground": "#B2CCD6"
@@ -314,10 +342,21 @@
 				"source.scss support.type.property-name",
 				"source.less support.type.property-name",
 				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.postcss support.type.property-name",				
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "CSS Numbers y tipado de variables",
+			"scope": [
+				"constant.numeric.css",			
+								
+				
+			],
+			"settings": {
+				"foreground": "#ea4f79"
 			}
 		},
 		{
@@ -325,7 +364,7 @@
 			"scope": [
 				"entity.name.module.js",
 				"variable.import.parameter.js",
-				"variable.other.class.js"
+				"variable.other.class.js",
 			],
 			"settings": {
 				"foreground": "#FF5370"
@@ -344,7 +383,7 @@
 		{
 			"name": "entity.name.method.js",
 			"scope": [
-				"entity.name.method.js"
+				"entity.name.method.js",				
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -364,7 +403,7 @@
 		{
 			"name": "Attributes",
 			"scope": [
-				"entity.other.attribute-name"
+				"entity.other.attribute-name",
 			],
 			"settings": {
 				"foreground": "#FFB454"
