@@ -1,3 +1,11 @@
+// #f6ab1c
+// #99ffcc
+// #00aaff
+// #C792EA
+// #FF536B
+// #82AAFF
+// #89DDFF
+
 {
 	"name": "BlackPanther",
 	"type": "dark",
@@ -55,12 +63,13 @@
 		"activityBarBadge.background": "#99ffcc",
 		"activityBarBadge.foreground": "#232323",
 		"activityBar.background": "#202020",
-		"activityBar.border": "#202020",
+		"activityBar.border": "#99ffcc57",
 		"sideBarTitle.foreground": "#99ffcc",
 		"badge.background": "#f6ab1c",
 		"badge.foreground": "#232323",
 		"progressBar.background": "#99ffcc",
-		"terminalCursor.foreground": "#99ffcc"
+		"terminalCursor.foreground": "#99ffcc",
+		"activityBar.activeBorder": "#99ffcc",
 	},
 	"tokenColors": [
 		{
@@ -215,7 +224,6 @@
 				"keyword.control.flow",
 				"storage.type.class",
 				"constant.language.boolean",
-				"support.type.primitive",
 			],
 			"settings": {
 				"foreground": "#99ffcc",
@@ -225,11 +233,21 @@
 		{
 			"name": "Tipado de Typescript",
 			"scope": [				
-				"support.type.primitive",
+				"meta.type.annotation"
 			],
 			"settings": {
-				"foreground": "#F78C6C",
+				"foreground": "#99ffcc",
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Tipado de Typescript Funciones",
+			"scope": [				
+				"meta.return.type",
+			],
+			"settings": {
+				"foreground": "#C792EA",				
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -313,7 +331,7 @@
 			"name": "Class, Support",
 			"scope": [
 				"entity.name",
-				"support.type",
+				// "support.type",
 				"support.class",
 				"support.orther.namespace.use.php",
 				"meta.use.php",
@@ -323,15 +341,6 @@
 			],
 			"settings": {
 				"foreground": "#FFCB6B"
-			}
-		},
-		{
-			"name": "Entity Types",
-			"scope": [
-				"support.type",
-			],
-			"settings": {
-				"foreground": "#B2CCD6"
 			}
 		},
 		{
@@ -791,6 +800,87 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
+		},
+		// Astro and React Components
+		{
+			"name": "Astro & react Component Tag",
+			"scope": [
+				"support.class.component.js.jsx",
+				"support.class.component.astro"
+			],
+			"settings": {
+				"foreground": "#C792EA",
+				"fontStyle": "bold"
+			}
+
+		},
+		{
+			"name": "Attribute names for Astro & react Component Tag",
+			"scope": [
+				"meta.tag.component.astro entity.other.attribute-name",				
+				"meta.tag.js.jsx entity.other.attribute-name"				
+			],
+			"settings": {
+				"foreground": "#ffac75",				
+			}, 
+
+		},
+		{
+			"name": "Attribute string for Astro & react Component Tag",
+			"scope": [
+				"meta.tag.component.astro string.quoted",				
+				"meta.tag.js.jsx string.quoted"				
+			],
+			"settings": {
+				"foreground": "#f5ed80",				
+			}, 
+
+		},
+		{
+			"name": "Attribute variables for Astro & react Component Tag",
+			"scope": [
+				"variable.other.readwrite.tsx",				
+				"variable.other.readwrite.js.jsx"				
+			],
+			"settings": {
+				"foreground": "#99ffcc",				
+			}, 
+
+		},
+		
+		// JAVASCRIPT
+		{
+			"name": "Export word",
+			"scope": [
+				"keyword.control.export",						
+			],
+			"settings": {
+				"foreground": "#C792EA",				
+			}, 
+
+		},
+		{
+			"name": "Default and import words",
+			"scope": [
+				"keyword.control.default",	
+				"keyword.control.import",	
+			],
+			"settings": {
+				"foreground": "#99ffcc",				
+			}, 
+
 		}
+
+
+
 	]
 }
+
+// #f6ab1c
+// #99ffcc
+// #00aaff
+// #C792EA
+// #FF536B
+// #82AAFF
+// #89DDFF
+// #f5ed80

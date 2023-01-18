@@ -25,3 +25,9 @@
   "editor.cursorBlinking": "smooth",
 }
 ```
+
+## Recommended Font
+
+Any font that has ligatures will work perfect, but I really like:
+
+* [Victor Mono](https://rubjo.github.io/victor-mono/)
